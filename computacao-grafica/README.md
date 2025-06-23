@@ -3,7 +3,7 @@
 Este projeto é um mundo 3D básico desenvolvido usando WebGL. Ele inclui os arquivos essenciais para renderizar uma cena 3D e fornece uma base para desenvolvimento futuro.
 
 ## Estrutura do Projeto
-
+'''
 meu-projeto-webgl
 ├── index.html # Documento HTML principal do projeto
 ├── src
@@ -15,7 +15,7 @@ meu-projeto-webgl
 │ └── fragmentShader.glsl # Código GLSL para o fragment shader
 └── README.md # Documentação do projeto
 
-
+'''
 
 ## Instruções de Configuração
 
