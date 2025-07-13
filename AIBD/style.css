@@ -1,0 +1,142 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 100;
+  padding: 0;
+  background-color: #f9fbfd;
+  color: #333;
+}
+
+header {
+  background-color: #61bffc;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+}
+
+header h1 {
+  margin: 0;
+  
+  font-size: 24px;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 80px);
+}
+
+#painel-esquerdo {
+  width: 300px;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+  background-color: #fff;
+}
+
+#painel-esquerdo input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+#btnBuscar {
+  width: 20%;
+  padding: 8px;
+  font-size: 16px;
+  background-color: #61bffc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#btnBuscar:hover {
+  background-color: #4aa4e3;
+}
+
+#info {
+  margin-top: 20px;
+  margin-left: 5%;
+}
+
+#info h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#info p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+
+
+#cy {
+  flex: 1;
+  background-color: #eef2f7;
+}
+
+#sugestoes {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 999;
+  max-height: 200px;
+  overflow-y: auto;
+  width: 260px;
+  display: none;
+}
+
+.sugestao-selecionada {
+  background-color: #cce5ff;
+}
+
+
+#sugestoes li:hover {
+  background-color: #f0f0f0;
+}
+
+#tooltip {
+  position: absolute;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  font-size: 12px;
+  display: none;
+  z-index: 9999;
+}
+
+#info-container {
+  display: flex;
+  align-items: flex-start; /* alinha pelo topo */
+  gap: 40px; /* espaço entre info e lista */
+  margin-top: 30px;
+}
+
+#info {
+  max-width: 300px;
+}
+
+#lista-relacionados {
+  max-width: 400px;
+  margin-top: 15px;
+}
+
+#info p, #info h2,
+#lista-relacionados h3, #lista-relacionados li {
+  margin: 0 0 8px 0;
+}
+
